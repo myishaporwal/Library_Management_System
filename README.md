@@ -1,6 +1,6 @@
 # Library Management System
 
-A responsive Library Management System interface created by **Myisha Porwal**. It includes a dashboard, catalog management, students, librarians, borrowing records, a periodicals shelf, and project documentation.
+A responsive Library Management System interface. It includes a dashboard, catalog management, students, librarians, borrowing records, a periodicals shelf, and project documentation.
 
 ## Project structure
 

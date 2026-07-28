@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Novella | Library Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="reference-style.css"><link rel="stylesheet" href="navigation-fix.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard"><span class="brand-mark">N</span><span>novella</span></a>
+      <p class="eyebrow">Workspace</p>
+      <nav>
+        <a class="nav-link active" href="#dashboard" data-page="dashboard"><span>⌂</span>Dashboard</a>
+        <a class="nav-link" href="#books" data-page="books"><span>▤</span>Books <b id="book-count">6</b></a>
+        <a class="nav-link" href="#students" data-page="students"><span>◉</span>Students</a>
+        <a class="nav-link" href="#librarians" data-page="librarians"><span>♙</span>Librarians</a>
+        <a class="nav-link" href="#loans" data-page="loans"><span>↗</span>Borrowing</a>
+      </nav>
+      <p class="eyebrow secondary">Support</p>
+      <nav><a class="nav-link" href="#about" data-page="about"><span>i</span>About</a><a class="nav-link" href="#contact" data-page="contact"><span>?</span>Contact</a></nav>
+      <div class="profile"><div class="avatar">MP</div><div><strong>Myisha Porwal</strong><small>Library admin</small></div><button class="dots" title="Account">•••</button></div>
+    </aside>
+    <main>
+      <header><button class="menu" id="menu" aria-label="Open navigation">☰</button><div><p class="eyebrow" id="crumb">Library workspace</p><h1 id="page-title">Good morning, Myisha</h1></div><div class="header-actions"><button class="icon-button" id="theme" title="Toggle theme">◐</button><button class="notification" title="Notifications">♢<i></i></button><button class="new-button" id="primary-action">+ Add book</button></div></header>
+
+      <section class="page active" id="dashboard">
+        <div class="hero"><div><p class="kicker">Monday, 28 July</p><h2>Your library,<br><em>in focus.</em></h2><p>Here is a quick look at what needs your attention today.</p><button class="light-button" data-go="books">Browse collection <span>→</span></button></div><div class="hero-art"><div class="book book-a"></div><div class="book book-b"></div><div class="book book-c"></div><div class="sun"></div></div></div>
+        <div class="stats"><article><span class="stat-icon coral">▤</span><p>Total titles</p><strong id="stat-books">1,248</strong><small>+12 this month</small></article><article><span class="stat-icon amber">◉</span><p>Active members</p><strong>386</strong><small>+8 this month</small></article><article><span class="stat-icon blue">↗</span><p>Books on loan</p><strong id="stat-loans">64</strong><small>5 due this week</small></article><article><span class="stat-icon mint">✓</span><p>Available now</p><strong id="stat-available">1,184</strong><small>94.9% of collection</small></article></div>
+        <section class="periodicals"><div class="periodicals-heading"><div><p class="eyebrow">Fresh on the shelf</p><h3>News &amp; magazines</h3></div><button class="text-button" id="browse-periodicals">Browse archive <span>→</span></button></div><div class="magazine-grid"><article class="magazine mag-1"><small>JULY 2026</small><b>THE<br>READER</b><i>Stories worth staying up for</i></article><article class="magazine mag-2"><small>ISSUE 48</small><b>MONOCLE</b><i>The good life, well considered</i></article><article class="magazine mag-3"><small>WEEKEND EDITION</small><b>THE<br>DAILY</b><i>Ideas, culture &amp; the city</i></article><article class="magazine mag-4"><small>VOLUME 12</small><b>ARCHITECTURE<br>NOW</b><i>Spaces for a changing world</i></article><div class="magazine-note"><span>✦</span><strong>New arrivals every week</strong><p>Discover the latest periodicals, newspapers, and literary journals in your reading room.</p></div></div></section>
+        <div class="grid-two"><section class="panel"><div class="panel-top"><div><p class="eyebrow">Activity</p><h3>Recent borrowing</h3></div><button class="text-button" data-go="loans">View all</button></div><div class="activity" id="activity"></div></section><section class="panel due"><div class="panel-top"><div><p class="eyebrow">Needs attention</p><h3>Due soon</h3></div><span class="pill">3 items</span></div><div class="due-list"><div><div class="cover green"></div><span><strong>The Midnight Library</strong><small>Due tomorrow · Maya Chen</small></span><b>1d</b></div><div><div class="cover coral-cover"></div><span><strong>Atomic Habits</strong><small>Due in 2 days · Rohan Shah</small></span><b>2d</b></div><div><div class="cover navy"></div><span><strong>The Creative Act</strong><small>Due in 3 days · Sofia Rai</small></span><b>3d</b></div></div></section></div>
+      </section>
+
+      <section class="page" id="books"><div class="section-head"><div><p class="eyebrow">Catalog</p><h2>Books &amp; collection</h2><p>Manage your library’s physical and digital titles.</p></div><button class="new-button add-book">+ Add new book</button></div><div class="toolbar"><label class="search"><span>⌕</span><input id="book-search" placeholder="Search by title, author, or ISBN"></label><select id="availability"><option value="all">All availability</option><option value="available">Available</option><option value="loaned">On loan</option></select><button class="filter-button">☷ Filters</button></div><section class="panel table-panel"><div class="table-wrap"><table><thead><tr><th>Title</th><th>Author</th><th>ISBN</th><th>Published</th><th>Status</th><th></th></tr></thead><tbody id="books-body"></tbody></table></div><div class="table-footer"><span id="results">Showing 6 books</span><div><button class="page-btn">‹</button><button class="page-btn selected">1</button><button class="page-btn">2</button><button class="page-btn">›</button></div></div></section></section>
+
+      <section class="page" id="students"><div class="section-head"><div><p class="eyebrow">Members</p><h2>Students</h2><p>Keep member details and borrowing history in one place.</p></div><button class="new-button" id="add-student">+ Add student</button></div><section class="panel cards-panel" id="student-list"></section></section>
+      <section class="page" id="librarians"><div class="section-head"><div><p class="eyebrow">Team</p><h2>Librarians</h2><p>The people who keep Novella running smoothly.</p></div><button class="new-button" id="add-librarian">+ Add librarian</button></div><section class="panel cards-panel" id="librarian-list"></section></section>
+      <section class="page" id="loans"><div class="section-head"><div><p class="eyebrow">Circulation</p><h2>Borrowing desk</h2><p>Track every checked out title and make returns easy.</p></div><button class="new-button" id="borrow-book">+ Record a loan</button></div><section class="panel table-panel"><div class="table-wrap"><table><thead><tr><th>Book</th><th>Borrower</th><th>Borrowed</th><th>Due back</th><th>Status</th><th></th></tr></thead><tbody id="loans-body"></tbody></table></div></section></section>
+      <section class="page" id="about"><div class="about-layout"><div><p class="eyebrow">About Novella</p><h2>A calmer way to run a busy library.</h2><p class="lead">Novella brings your collection, members, and circulation desk into one considered workspace.</p><p>Built for schools and university libraries, it removes the busywork from day-to-day administration so your team can spend more time connecting people with good books.</p></div><div class="values"><article><b>01</b><h3>Simple by design</h3><p>Useful details, exactly where you need them.</p></article><article><b>02</b><h3>Always current</h3><p>Availability and due dates at a glance.</p></article><article><b>03</b><h3>Built for people</h3><p>Friendly tools for librarians and readers alike.</p></article></div></div></section>
+      <section class="page" id="contact"><div class="contact-layout"><div><p class="eyebrow">Support desk</p><h2>How can we help?</h2><p>Tell us what is going on and the support team will be in touch within one working day.</p><div class="contact-detail"><span>✉</span><div><small>Email</small><strong>hello@novella.library</strong></div></div><div class="contact-detail"><span>◷</span><div><small>Hours</small><strong>Mon–Fri, 9:00–18:00</strong></div></div></div><form class="contact-form" id="contact-form"><label>Full name<input required placeholder="Your name"></label><label>Email address<input required type="email" placeholder="you@example.com"></label><label>Message<textarea required placeholder="How can we help?"></textarea></label><button class="new-button">Send message <span>→</span></button><p class="form-message"></p></form></div></section>
+    </main>
+  </div>
+  <div class="modal-wrap" id="modal"><div class="modal"><button class="close" id="close-modal">×</button><p class="eyebrow" id="modal-eyebrow">Catalog</p><h2 id="modal-title">Add a book</h2><form id="modal-form"><div id="modal-fields"></div><button class="new-button">Save changes <span>→</span></button></form></div></div>
+  <div class="toast" id="toast">Saved successfully <span>✓</span></div>
+  <script src="app.js"></script><script src="reference.js"></script><script src="name.js"></script>
+</body>
+</html>

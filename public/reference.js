@@ -1,0 +1,1 @@
+document.getElementById('browse-periodicals').addEventListener('click',()=>{const notice=document.getElementById('toast');notice.firstChild.textContent='The periodicals archive is being prepared ';notice.classList.add('show');setTimeout(()=>notice.classList.remove('show'),2600)});

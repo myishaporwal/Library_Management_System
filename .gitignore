@@ -1,0 +1,13 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# .NET build output (for a future ASP.NET Core API)
+bin/
+obj/
+
+# Secrets must never be committed
+appsettings.Development.json
+.env

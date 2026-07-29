@@ -193,13 +193,6 @@ LibraryManagementSystem
 ## 📸 Screenshots
 
 
-### Login Page
-
-```text id="j6i4o8"
-
-
-```
-
 ### Dashboard
 <img width="941" height="506" alt="Screenshot 2026-07-28 161741" src="https://github.com/user-attachments/assets/fb3b77c9-d223-4184-b407-b59709e7efd9" />
 

@@ -191,13 +191,11 @@ LibraryManagementSystem
 
 ## 📸 Screenshots
 
-> Add screenshots after uploading them to the repository.
 
 ### Login Page
 
 ```text id="j6i4o8"
-screenshots/login.png
-<img width="1094" height="604" alt="image" src="https://github.com/user-attachments/assets/0c953312-ac9a-48e1-8646-2f9611ca21c2" />
+
 
 ```
 

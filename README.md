@@ -201,6 +201,7 @@ LibraryManagementSystem
 ```
 
 ### Dashboard
+<img width="941" height="506" alt="Screenshot 2026-07-28 161741" src="https://github.com/user-attachments/assets/fb3b77c9-d223-4184-b407-b59709e7efd9" />
 
 ```text id="fxhq2n"
 screenshots/dashboard.png
@@ -210,20 +211,21 @@ screenshots/dashboard.png
 <img width="958" height="506" alt="Screenshot 2026-07-28 160509" src="https://github.com/user-attachments/assets/a4d3dac0-3295-45d8-ad3c-3cf462d79524" />
 
 ```text id="04f2i8"
-screenshots/books.png
+books.png
 ```
 
 ### Students Module
 <img width="955" height="499" alt="Screenshot 2026-07-28 160549" src="https://github.com/user-attachments/assets/287631ca-fce2-46c0-bf83-299e0aa44b06" />
 
 ```text id="zeyg3v"
-screenshots/students.png
+students.png
 ```
 
 ### Borrow Module
+<img width="938" height="497" alt="Screenshot 2026-07-28 160625" src="https://github.com/user-attachments/assets/df0df472-95ca-4535-b01c-e9e39b9b8007" />
 
 ```text id="2szqf5"
-screenshots/borrow.png
+borrow.png
 ```
 
 ---

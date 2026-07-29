@@ -215,6 +215,7 @@ screenshots/books.png
 
 ### Students Module
 <img width="955" height="499" alt="Screenshot 2026-07-28 160549" src="https://github.com/user-attachments/assets/287631ca-fce2-46c0-bf83-299e0aa44b06" />
+
 ```text id="zeyg3v"
 screenshots/students.png
 ```

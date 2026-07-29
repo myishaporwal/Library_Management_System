@@ -1,3 +1,4 @@
+<img width="958" height="506" alt="Screenshot 2026-07-28 160509" src="https://github.com/user-attachments/assets/4bba0233-8c19-4800-80ba-0b2b8ebd1537" />
 # 📚 Library Management System
 
 <div align="center">

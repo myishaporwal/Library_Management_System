@@ -22,7 +22,7 @@ Manage books, students, librarians, borrowing, and returns through a secure and 
 
 The **Library Management System** is a full-stack web application developed to automate and simplify library operations. It eliminates manual record-keeping by providing a centralized platform for managing books, students, librarians, and borrowing transactions.
 
-The application follows the **Model-View-Controller (MVC)** architecture and leverages **ASP.NET Core MVC**, **Entity Framework Core**, and **SQL Server** to deliver a scalable, secure, and maintainable solution.
+The application follows the **Model-View-Controller (MVC)** architecture and leverages **ASP.NET Core MVC**, **Entity Framework Core**, and **SQL Server** to deliver a scalable, secure, and maintainable system.
 
 ---
 
